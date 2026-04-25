@@ -1,0 +1,14 @@
+# metrics_lib v0.1.0 - API Reference
+
+## Modules
+
+- [MetricsLib](MetricsLib.md): Lightweight metrics collection for Elixir applications.
+- [MetricsLib.Aggregator](MetricsLib.Aggregator.md): Periodically reads raw samples from `MetricsLib.Storage`, computes
+aggregates (avg, p95, p99, rate/s), broadcasts results via PubSub, and
+keeps the last 60 snapshots in state for the dashboard history.
+
+- [MetricsLib.Dashboard.Live](MetricsLib.Dashboard.Live.md): Real-time LiveView dashboard for MetricsLib.
+- [MetricsLib.Dashboard.Router](MetricsLib.Dashboard.Router.md): Plug router that serves the LiveView dashboard at `/metrics`.
+- [MetricsLib.Storage](MetricsLib.Storage.md): ETS-backed storage for raw metric samples.
+- [MetricsLib.Telemetry](MetricsLib.Telemetry.md): Attaches handlers to `:telemetry` events emitted by Phoenix and Ecto.
+
